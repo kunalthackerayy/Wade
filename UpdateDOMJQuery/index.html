@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update DOM with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        #heading {
+            color: darkblue;
+            margin-bottom: 20px;
+        }
+        #updateBtn {
+            padding: 10px 15px;
+            background-color: lightgreen;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="heading">Original Heading</h2>
+    <input type="text" id="newText" placeholder="Enter new heading text">
+	<br><br>
+    <button id="updateBtn">Update Heading</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#updateBtn').click(function() {
+                const inputText = $('#newText').val();
+                $('#heading')
+                    .text(inputText)
+                    .css('color', 'green');
+            });
+        });
+    </script>
+
+</body>
+</html>
