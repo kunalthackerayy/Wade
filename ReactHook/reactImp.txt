@@ -1,0 +1,8 @@
+First command : npm create vite@latest
+	Choose a Project name
+	Select React
+	then Javascript
+
+Second Command : cd 01-basic-react
+	         npm install
+                 npm run devs
